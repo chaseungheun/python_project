@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask Index</title>
+</head>
+<body>
+<h1>코로나 현황</h1>
+  <div class="table-responsive">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <td>확진자</td>
+                            <td>완치</td>
+                            <td>검사 중</td>
+                            <td>사망자</td>
+                        </tr>
+
+                        <tr>
+                            <td>{{result[0].text}}</td>
+                            <td>{{result[1].text}}</td>
+                            <td>{{result[2].text}}</td>
+                            <td>{{result[3].text}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+</body>
+</html>
